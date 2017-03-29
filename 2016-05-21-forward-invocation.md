@@ -121,7 +121,7 @@ TARGET_CPU_ARM64 下后者不存在，但其他情况要区分一个方法的返
 #endif
 ```
 
-### PS.3
+#### PS.3
 `class_addMethod` 第4个参数不应传 NULL，可使用一个私有函数获取：
 
 ```objc

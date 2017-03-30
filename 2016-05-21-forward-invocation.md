@@ -134,3 +134,13 @@ TARGET_CPU_ARM64 下后者不存在，但其他情况要区分一个方法的返
     const char *types = [sig _typeString].UTF8String;
     class_addMethod(cls, selector, fp, types);
 ```
+
+### 原理
+
+开源代码中没有实现
+```
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)sel {
+    _objc_fatal("-[NSObject methodSignatureForSelector:] "
+                "not available without CoreFoundation");
+}
+```

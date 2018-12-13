@@ -143,3 +143,16 @@ TARGET_CPU_ARM64 下后者不存在，但其他情况要区分一个方法的返
                 "not available without CoreFoundation");
 }
 ```
+
+可以反编译
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+
+看到基本就是利用了如下 `runtime.h` 中的方法遍历所有 protocol、class 本身来获取 Method 及其 Description
+
+* class_copyProtocolList
+* class_getSuperclass
+* class_isMetaClass
+* protocol_getMethodDescription
+* class_getInstanceMethod
+* method_getDescription

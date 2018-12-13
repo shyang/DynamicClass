@@ -5,10 +5,9 @@ title: 动态生成一个类，并拦截对其发送的消息
 
 Create a class dynamically and forward messages
 
-生成一个默认 iOS 项目，删除 `AppDelegate.h` 与 `AppDelegate.m`，修改 `main.c`：
+生成一个默认 iOS 项目，删除 `AppDelegate.h` 与 `AppDelegate.m`，删除 `main.c`中对其引用：
 
 ```c
-#import <objc/runtime.h>
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -73,7 +72,7 @@ invoke: <NSInvocation: 0x78eccfe0>
 
 可以看到全局函数 `forwardInvocation` 被调用到了，系统对 `-[AppDelegate application:didFinishLaunchingWithOptions:]` 的调用被包装成了一个 `NSInvocation` 对象。
 
-通过这种方式，系统的回调都能被捕捉起来，包装为 `NSInvocation` 后，可以有各种应用，如转发给另一个对象处理、转发给某个脚本解释器处理……等等。
+通过这种方式，系统的回调都能被捕捉起来，包装为 `NSInvocation` 后，可以有各种应用，如转发给另一个对象处理、转发给某个脚本解释器处理、远程过程调用等。
 
 
 

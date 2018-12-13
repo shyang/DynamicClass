@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ADB0A0E121C2097800D4A28E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB0A0E021C2097800D4A28E /* AppDelegate.m */; };
 		ADB0A0E421C2097800D4A28E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB0A0E321C2097800D4A28E /* ViewController.m */; };
 		ADB0A0E721C2097800D4A28E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB0A0E521C2097800D4A28E /* Main.storyboard */; };
 		ADB0A0E921C2097A00D4A28E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB0A0E821C2097A00D4A28E /* Assets.xcassets */; };
@@ -17,8 +16,6 @@
 
 /* Begin PBXFileReference section */
 		ADB0A0DC21C2097800D4A28E /* DynamicClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADB0A0DF21C2097800D4A28E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		ADB0A0E021C2097800D4A28E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ADB0A0E221C2097800D4A28E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		ADB0A0E321C2097800D4A28E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ADB0A0E621C2097800D4A28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +23,7 @@
 		ADB0A0EB21C2097A00D4A28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADB0A0ED21C2097A00D4A28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADB0A0EE21C2097A00D4A28E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADB0A0F521C20AC200D4A28E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +40,7 @@
 		ADB0A0D321C2097800D4A28E = {
 			isa = PBXGroup;
 			children = (
+				ADB0A0F521C20AC200D4A28E /* README.md */,
 				ADB0A0DE21C2097800D4A28E /* DynamicClass */,
 				ADB0A0DD21C2097800D4A28E /* Products */,
 			);
@@ -58,8 +57,6 @@
 		ADB0A0DE21C2097800D4A28E /* DynamicClass */ = {
 			isa = PBXGroup;
 			children = (
-				ADB0A0DF21C2097800D4A28E /* AppDelegate.h */,
-				ADB0A0E021C2097800D4A28E /* AppDelegate.m */,
 				ADB0A0E221C2097800D4A28E /* ViewController.h */,
 				ADB0A0E321C2097800D4A28E /* ViewController.m */,
 				ADB0A0E521C2097800D4A28E /* Main.storyboard */,
@@ -143,7 +140,6 @@
 			files = (
 				ADB0A0E421C2097800D4A28E /* ViewController.m in Sources */,
 				ADB0A0EF21C2097A00D4A28E /* main.m in Sources */,
-				ADB0A0E121C2097800D4A28E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -273,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
